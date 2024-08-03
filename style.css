@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+@font-face {
+    font-family: 'Centaur';
+    src: url(CENTAUR.TTF);
+}
+@font-face {
+    font-family: 'Fenix';
+    src: url(Fenix-Regular.ttf);
+}
+
+
+.color{
+    background:linear-gradient(to bottom right, #c0d1c2, #2e4347)
+}
+
+.agrupar {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    width: 1260px;
+    height: 1200px;
+    display: block;
+
+}
+
+.cabezera {
+    margin: 10px;
+    font: 40px 'Centaur';
+    width: 1260px;
+    border: 1px solid #000;
+    
+}
+
+.navegacion {
+    font: 20px 'fenix';
+    margin: 30px;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.navegacion li{
+    display: inline-block;
+    padding: 10px 268px;
+    border: 1px solid #000; 
+    
+}
+
+.primeraSeccion {
+    font-size: 20px;
+    border: 1px solid #000; 
+    text-align: center;
+    width: 500px;
+    margin: 30px auto;
+}
+
+.peq{
+    font-size: 19px;
+}
+
+.primero {
+    margin: 50px;
+    padding: 10px 40px;
+    text-align: left;
+    list-style-type: none;
+    font: 20px 'fenix';
+    
+}
+
+.segundo {
+    margin: 50px;
+    padding: 10px 40px;
+    text-align: right;
+    list-style-type: none;
+    font: 20px 'fenix';
+}
+
+.tercero {
+    margin: 50px;
+    padding: 10px 40px;
+    text-align: left;
+    list-style-type: none;
+    font: 20px 'fenix';
+}
+
+.cuarto {
+    margin: 50px;
+    padding: 10px 40px;
+    text-align: right;
+    list-style-type: none;
+    font: 20px 'fenix';
+}
+
+.quinto {
+    margin: 50px;
+    padding: 10px 40px;
+    text-align: left;
+    list-style-type: none;
+    font: 20px 'fenix';
+}
+
+
+
