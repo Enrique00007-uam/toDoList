@@ -6,11 +6,11 @@ using namespace std;
 
 
 
-
+//funcion principal, contiene todas las funciones del programa y un switch para aceder a ellas.
 void menuPrincipal();
 int main()
 {
-    
+    //llamda a la funcion principal
     menuPrincipal();
     return 0;
 }
@@ -18,6 +18,7 @@ int main()
 void menuPrincipal() {
     int opcion;
     do {
+        cout << endl;
         cout << "===== Menu Principal =====" << endl;
         cout << "1. Agregar Tarea" << endl;
         cout << "2. Ver Lista de Tareas" << endl;
@@ -49,6 +50,7 @@ void menuPrincipal() {
                 break;
             default:
                 cout << "Opcion no valida. Intente de nuevo." << endl;
+                cout << endl;
         }
     } while(opcion != 6);
 }
