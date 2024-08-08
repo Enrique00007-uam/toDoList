@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    
+    text-decoration: none;
+    color: inherit;
 }
 
 @font-face {
@@ -13,96 +14,165 @@
     src: url(Fenix-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'WixMadeforText-VariableFont_wght';    
+    src: url(WixMadeforText-VariableFont_wght.ttf);
+}
 
-.color{
-    background:linear-gradient(to bottom right, #c0d1c2, #2e4347)
+
+
+.contenedor{
+    min-height: 100vh;
+    background-image: url(Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
 }
 
 .agrupar {
     text-align: center;
-    padding: 10px;
-    margin: 10px;
-    width: 1260px;
-    height: 1200px;
     display: block;
-
 }
 
-.cabezera {
-    margin: 10px;
-    font: 40px 'Centaur';
+.cabezera {  
+    font: 70px 'WixMadeforText-VariableFont_wght';
     width: 1260px;
-    border: 1px solid #000;
-    
+    color: #FEFFFE;
+    text-align: left;
+    margin-bottom: 75%;
+    left: 1%;
+    position: relative;
 }
+
 
 .navegacion {
+    background:#37123C;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     font: 20px 'fenix';
-    margin: 30px;
-    text-align: center;
-    padding: 10px;
-    
+    color: white;
+}
+
+.navegacion ul{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .navegacion li{
-    display: inline-block;
-    padding: 10px 268px;
-    border: 1px solid #000; 
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: inherit;
+}
+
+nav a:hover {
+    background: #457b9d62;
+    box-shadow: 40px 0 100px #457b9d62, -40px 0 100px #e100ff;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    justify-content: flex-end; /* Align items to the bottom */
     
 }
 
-.primeraSeccion {
+article .primeraSeccion {
+    color: #fff;
+    font-size: 30px;
+    width: 700px;
+    font-family: 'WixMadeforText-VariableFont_wght'; 
+    margin-top: -75%;
+    margin-left: 1%;
+    text-align: left !important;
+}
+
+.boton {
+    
     font-size: 20px;
-    border: 1px solid #000; 
-    text-align: center;
-    width: 500px;
-    margin: 30px auto;
+    width: 200px;
+    background: #37123C;
+    border: 1px solid #37123C;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 1000px;
+    text-decoration: none;
+    position: absolute;
+    left: 1%;
+    bottom: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
-.peq{
-    font-size: 19px;
+.boton::after {
+    content:'';
+    position: absolute;
+    height: 109%;
+    width: 103%;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right, #008cff, #e100ff);
+    z-index: -1;
 }
 
-.primero {
-    margin: 50px;
-    padding: 10px 40px;
+.boton:hover {
+    z-index: 0;
+    box-shadow: 40px 0 100px #008cff, -40px 0 100px #e100ff;
+}
+
+.espaciado {
+    position: absolute;
+}
+
+.imagen {
+    width: 22%;
+    height: 22%;
+    position: relative;
+    top: -460px;
+    right: 400px;
+}
+
+.segundaSeccion{
+    color: black;
+    margin: 20px 20px;
+    padding: 20px;
+    position: relative;
+    top: -720px; 
+}
+
+.segundaSeccion header{
+    position: relative;
+    left: 35px;
+    font: 70px 'WixMadeforText-VariableFont_wght';
+}
+
+.segundaSeccion p{
+    font: 20px 'WixMadeforText-Italic-VariableFont_wght';
+    margin: 20px;
+    font: 20px 'WixMadeforText-VariableFont_wght';
+    float: right;
+    width: 750px;
     text-align: left;
-    list-style-type: none;
-    font: 20px 'fenix';
-    
-}
-
-.segundo {
-    margin: 50px;
-    padding: 10px 40px;
-    text-align: right;
-    list-style-type: none;
-    font: 20px 'fenix';
-}
-
-.tercero {
-    margin: 50px;
-    padding: 10px 40px;
-    text-align: left;
-    list-style-type: none;
-    font: 20px 'fenix';
-}
-
-.cuarto {
-    margin: 50px;
-    padding: 10px 40px;
-    text-align: right;
-    list-style-type: none;
-    font: 20px 'fenix';
-}
-
-.quinto {
-    margin: 50px;
-    padding: 10px 40px;
-    text-align: left;
-    list-style-type: none;
-    font: 20px 'fenix';
 }
 
 
 
+
+
+.pie {
+    color: black;
+    position: relative;
+    bottom: -400px;
+    clear: both;
+}
