@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/animation.css">
     <title>To-Do-List</title>
     <meta name="description" content="Simplify your task management with our platform, ideal for project management and team collaboration. Use our to-do list and task tracking software to stay productive and organized. Perfect for individuals and teams alike. ">
     <meta name="author" content="Joshua Vílchez, Enrique Solis, Saul Castellon">
@@ -11,12 +12,18 @@
 </head>
 <nav class="navegacion">
     <ul>
+        <img src="img/logo.webp" alt="Logo">
         <li><a href="#">About</a></li>
         <li><a href="routes/tasks.html">Tasks</a></li>
     </ul>
 </nav>
 <div class="contenedor">
 <body class="color">
+    <div class="page-transition">
+        <div id="logo">
+            <img src="img/logo.webp" alt="Logo">
+          </div>
+      </div>
 </div>
     <div class="agrupar">
         <div class="container">
@@ -37,7 +44,7 @@
     <div class="espaciado"></div>
 
     </div>
-    <img src="imagen.jpg" alt="imagen" class="imagen">
+    <img src="img/imagen.webp" alt="imagen" class="imagen">
     <section class="segundaSeccion">
     <header><h3>About US</h3></header>
     <p>We are dedicated to enhancing productivity and simplifying task
@@ -46,6 +53,12 @@
     </p>
 </section>
     
+<section class="form-register">
+    <h4>Leave us a comment</h4>
+    <input type="text" class="controls" name="nombres" id="nombres" placeholder="Type your name">
+    <textarea name="comments" class="controls" id="comments" placeholder="Type your comments"></textarea>
+    <input type="submit" class="botons" value="Submit">  
+</section>
 
     <footer class="pie">
         Developed by: Joshua Vílchez, Enrique Solis, Saul Castellon.
