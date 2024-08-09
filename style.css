@@ -108,7 +108,7 @@ article .primeraSeccion {
     font-family: 'WixMadeforText-VariableFont_wght'; 
     margin-top: -75%;
     margin-left: 1%;
-    text-align: left !important;
+    text-align: left;
 }
 
 .boton {
@@ -173,7 +173,6 @@ article .primeraSeccion {
 .segundaSeccion p{
     font: 20px 'WixMadeforText-Italic-VariableFont_wght';
     margin: 20px;
-    font: 20px 'WixMadeforText-VariableFont_wght';
     float: right;
     width: 750px;
     text-align: left;
