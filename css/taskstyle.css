@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+@font-face {
+    font-family: 'Centaur';
+    src: url(../CENTAUR.TTF);
+}
+@font-face {
+    font-family: 'Fenix';
+    src: url(../Fenix-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'WixMadeforText-VariableFont_wght';    
+    src: url(../WixMadeforText-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'WixMadeforText-Italic-VariableFont_wght';    
+    src: url(../WixMadeforText-VariableFont_wght.ttf);
+}
+
+.navegacion {
+    width: 100%;
+    position: fixed;
+   z-index: 100000;
+    background:#8d01a0;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'WixMadeforText-VariableFont_wght'; 
+    font-size: 20px;
+    color: white;
+    left: 0px;
+}
+
+.navegacion img{
+    position: relative;
+    border-radius: 15%;
+    width: 3.5%;
+    left: -80%;
+    
+}
+
+.navegacion ul{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navegacion li{
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: inherit;
+}
+
+nav a:hover {
+    background: #b302ca;
+    box-shadow: 40px 0 100px #457b9d62, -40px 0 100px #e100ff;
+    color: #fff;
+}
