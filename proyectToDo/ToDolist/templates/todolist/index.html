@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animation.css' %}">
+    <title>To-Do-List</title>
+    <meta name="description" content="Simplify your task management with our platform, ideal for project management and team collaboration. Use our to-do list and task tracking software to stay productive and organized. Perfect for individuals and teams alike. ">
+    <meta name="author" content="Joshua Vílchez, Enrique Solis, Saul Castellon">
+    <meta name="keywords" content="Task, manager, to-do-list, task manager, task manager to-do-list, to-do list app, task tracking software, productivity tools">
+</head>
+<nav class="navegacion">
+    <ul>
+        <img src="{% static 'img/logo.webp' %}" alt="Logo">
+        <li><a href="#">About</a></li>
+        <li><a href="{% url 'tasks' %}">Tasks</a></li>
+    </ul>
+</nav>
+<div class="contenedor">
+<body class="color">
+    <div class="page-transition">
+        <div id="logo">
+            <img src="{% static 'img/logo.webp' %}" alt="Logo">
+          </div>
+      </div>
+</div>
+    <div class="agrupar">
+        <div class="container">
+    <header class="cabezera">
+        <h1>To-do-list</h1>
+    </header>
+    <article>
+        <section class="primeraSeccion">
+            <h6>This is a to-do list app designed to help 
+            users to organize and manage their daily activities.</h6>
+        </section>
+    </article>
+    <button class="boton"><a href ="{% url 'tasks' %}">
+    Use free tool</a>
+    </button>
+
+
+    <div class="espaciado"></div>
+
+    </div>
+    <img src="{% static 'img/imagen.webp' %}"  alt="imagen" class="imagen">
+    <section class="segundaSeccion">
+    <header><h3>About US</h3></header>
+    <p>We are dedicated to enhancing productivity and simplifying task
+    management for individuals and teams. Our free tool offers a user-friendly
+    platform to efficiently organize, prioritize, and optimize tasks, helping you achieve your goals with ease.
+    </p>
+</section>
+    
+<section class="form-register">
+    <h4>Leave us a comment</h4>
+    <input type="text" class="controls" name="nombres" id="nombres" placeholder="Type your name">
+    <textarea name="comments" class="controls" id="comments" placeholder="Type your comments"></textarea>
+    <input type="submit" class="botons" value="Submit">  
+</section>
+
+    <footer class="pie">
+        Developed by: Joshua Vílchez, Enrique Solis, Saul Castellon.
+    </footer>
+
+    
+
+</div>
+</div>
+</body>
+</html>
