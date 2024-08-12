@@ -1,17 +1,39 @@
 <form enctype="multipart/form-data" method="POST">
-    
+    {% csrf_token %}
+    {% for campo in form %}
    <div class="mb-3">
-    <label for="" class="form-label">Task:</label>
+    <label for="" class="form-label">{{ campo.label }}</label>
     <input
-        type="text"
+        type="{{ campo.field.widget.input_type }}"
         class="form-control"
-        name=""
+        name="{{ campo.name }}"
         id=""
         aria-describedby="helpId"
-        placeholder="Task:"
+        placeholder="{{ campo.label }}"
+        value="{{ campo.value | default:'' }}"
     />
     
    </div>
+</div class="col-12 help-text"> {{campo.errors}} </div>
+   {% endfor %}
+
+   <input
+    name=""
+    id=""
+    class="btn btn-success"
+    type="submit"
+    value="submit information"
+/>
+<a
+    name=""
+    id=""
+    class="btn btn-primary"
+    href="{% url 'tasks' %}"
+    role="button"
+    >Cancel</a
+>
+
+
 
 
 

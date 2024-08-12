@@ -38,35 +38,29 @@
                 </tr>
             </thead>
             <tbody>
+                {% for task in tasks %}
                 <tr class="">
-                    <td>1</td>
-                    <td>Tarea1</td>
-                    <td>prueba de tarea1</td>
-                    <th>10</th>
-                    <td>pendiente</td>
+                    <td>{{ task.id }}</td>
+                    <td>{{ task.title}}</td>
+                    <td>{{ task.description }}</td>
+                    <th>{{ task.priority }}</th>
+                    <td>{{ task.Completed }}</td>
                     <td>
                         <a
                             name=""
                             id=""
-                            class="btn btn-info"
-                            href=""
-                            role="button"
-                            >Complete</a>
-                        <a
-                            name=""
-                            id=""
                             class="btn btn-danger"
-                            href="#"
+                            href="{% url 'delete' task.id %}"
                             role="button"
                             >Delete</a>
                         <a
                             name=""
                             id=""
                             class="btn btn-info"
-                            href="{% url 'edit' %}"
+                            href="{% url 'edit' task.id %}"
                             role="button"
                             >Edit</a>
-                        
+                        {% endfor %}
                 </tr>
             </tbody>
         </table>
