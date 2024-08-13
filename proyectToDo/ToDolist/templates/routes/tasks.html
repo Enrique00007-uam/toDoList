@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
+    <link rel="icon" type="image/x-icon" href="{% static 'img/logo.png' %}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/animation.css">
+    <link rel="stylesheet" href="{% static 'css/animation.css' %}">
     <title>Tasks</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/taskstyle.css' %}">
+    <title>Tasks</title>
 </head>
 <body>
-    <div class="page-transition">
+<nav class="navegacion">
+    <img src="{% static 'img/logo.png' %}" alt="Logo">
+    <ul>
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="#">Tool</a></li>
+    </ul>
+</nav>
+<div class="page-transition">
         <div id="logo">
-             <img decoding="async" src="../img/logo.webp">
-        </div>
+             <img decoding="async" src="{% static 'img/logo.png' %}">
+             </div>
     </div>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+    <
     <div class="card-header">
-        <h1>Lista de Tareas</h1>
+        <br> 
+        <h1>Tasks List</h1>
     </div>
     <a
         name=""
@@ -25,15 +39,15 @@
         >Add new tasks</a
     >
     
-    <div class="table-responsive">
-        <table class="table table-primary">
-            <thead>
+    <div class="table-responsive mt-3">
+        <table class="table table-striped table-hover table-bordered">
+            <thead class="thead-purple">
                 <tr>
                     <th scope="col">ID</th>
                     <th scope="col">Task</th>
                     <th scope="col">Description</th>
                     <th scope="col">Priotity</th>
-                    <th scope="col">State</th>
+                    <th scope="col">Completed</th>
                     <th scope="col">Actions</th>
                 </tr>
             </thead>
@@ -44,7 +58,16 @@
                     <td>{{ task.title}}</td>
                     <td>{{ task.description }}</td>
                     <th>{{ task.priority }}</th>
-                    <td>{{ task.Completed }}</td>
+                    <td><div class="form-check">
+                        <input class="form-check-input" type="checkbox">
+                    </div>
+                    <style>
+                        .form-check-input {
+                            width: 1.5em;
+                            height: 1.5em;
+                        }
+                    </style>
+                    </td>
                     <td>
                         <a
                             name=""
@@ -60,8 +83,9 @@
                             href="{% url 'edit' task.id %}"
                             role="button"
                             >Edit</a>
-                        {% endfor %}
-                </tr>
+                    </tr>
+            </td>
+            {% endfor %}    
             </tbody>
         </table>
     </div>
@@ -70,3 +94,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+<style>.thead-purple {
+    background-color:#b302ca ;
+    color: white;
+}</style>
+
