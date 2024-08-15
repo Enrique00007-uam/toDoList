@@ -26,13 +26,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 12.5px;
 }
 
 .navbar a {
   padding: 2px 12px;
+  transition: 0.5s;
 }
-
 nav a:hover {
   background: #b302ca;
   box-shadow: 40px 0 100px #457b9d62, -40px 0 100px #e100ff;
@@ -44,14 +43,14 @@ nav a:hover {
   border-radius: 15%;
   margin: 0;
   border-radius: 15%;
-  width: 10%;
+  width: 40px;
+  height: 100%;
 }
 
-/* Responsive 1 */
 @media (min-width: 720px) {
   .navbar {
     width: 100%;
-    height: 7.5%;
+    height: 55px;
     position: fixed;
     z-index: 100;
     flex-direction: row;
@@ -61,18 +60,17 @@ nav a:hover {
   }
 
   .navbar ul {
-    padding-bottom: 10px;
     flex-direction: row;
     margin-bottom: 0;
     padding-right: 0px;
   }
 
   .navbar a {
-    height: 100%;
     padding: 14px 30px;
+    transition: 0.5s;
   }
 
   .navbar img {
-    width: 3.5%;
+    width: 55px;
   }
 }

@@ -86,10 +86,11 @@ nav a:hover {
   border-radius: 15%;
   margin: 0;
   border-radius: 15%;
-  width: 10%;
+  width: 40px;
+  height: 100%;
 }
 
-.agrupar {
+.group {
   background-color: rgb(245, 245, 245);
   max-width: 1400px;
   margin: auto;
@@ -297,7 +298,7 @@ nav a:hover {
 @media (min-width: 720px) {
   .navbar {
     width: 100%;
-    height: 7.5%;
+    height: 55px;
     position: fixed;
     z-index: 100;
     flex-direction: row;
@@ -314,12 +315,12 @@ nav a:hover {
   }
 
   .navbar a {
-    height: 100%;
     padding: 14px 30px;
+    transition: 0.5s; /*add transition*/
   }
 
   .navbar img {
-    width: 3.5%;
+    width: 55px;
   }
 
   .container {

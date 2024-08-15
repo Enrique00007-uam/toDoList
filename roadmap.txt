@@ -5,3 +5,7 @@
 5. Creacion de archivo font.css
 6. Eliminacion de archivo form.js
 7. Agregacion de transition para el boton
+8. Arreglando bugs en tools
+9. Agregando transines para la nav bar
+
+X. Falta arreglar bug de pantalla de carga de tools
