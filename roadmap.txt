@@ -1,0 +1,7 @@
+1. Cambio de rutas de carpetas de estilos
+2. Creacion de carpetas para mayor orden
+3. Cambiar clases a ingles
+4. Cambio de titulo
+5. Creacion de archivo font.css
+6. Eliminacion de archivo form.js
+7. Agregacion de transition para el boton

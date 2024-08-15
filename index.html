@@ -1,96 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="icon" type="image/x-icon" href="img/logo.png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/animation.css">
+  <head>
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/animations/animation.css" />
+    <link rel="stylesheet" href="assets/font/font.css" />
     <title>To-Do-List</title>
-    <meta name="description" content="Simplify your task management with our platform, ideal for project management and team collaboration. Use our to-do list and task tracking software to stay productive and organized. Perfect for individuals and teams alike. ">
-    <meta name="author" content="Joshua Vílchez, Enrique Solis, Saul Castellon">
-    <meta name="keywords" content="Task, manager, to-do-list, task manager, task manager to-do-list, to-do list app, task tracking software, productivity tools">
-</head>
-<nav class="navegacion">
-    <img src="img/logo.png" alt="Logo">
+
+    <meta
+      name="description"
+      content="Simplify your task management with our platform, ideal for project management and team collaboration. Use our to-do list and task tracking software to stay productive and organized. Perfect for individuals and teams alike. "
+    />
+    <meta
+      name="author"
+      content="Joshua Vílchez, Enrique Solis, Saul Castellon"
+    />
+    <meta
+      name="keywords"
+      content="Task, manager, to-do-list, task manager, task manager to-do-list, to-do list app, task tracking software, productivity tools"
+    />
+  </head>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <img src="assets/img/logo.png" alt="Logo" />
     <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="routes/tasks.html">Tool</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="routes/tasks.html">Tool</a></li>
     </ul>
-</nav>
-<body>
+  </nav>
+  <body>
     <div class="page-transition">
-        <div id="logo">
-            <img src="img/logo.png" alt="Logo">
-             <h5 class="name">To-do-list</h5>
-          </div>
+      <div class="logo">
+        <img src="assets/img/logo.png" alt="Logo" />
+        <h5 class="name">To-do-list</h5>
       </div>
-<!--    Aqui el contenido se pone feo-->
-    
-        <div class="container">
-    <div class="primeraSeccion">
-    <header class="cabezera">
-        <h1>To-do-list</h1>
-    <article>
-        <section>
-            <h6>This is a to-do list app designed to help 
-            users to organize and manage their daily activities.</h6>
-        </section>
-    </article>
-</header>
-</div>
-<button class="boton">
-    <a href ="routes/tasks.html">Use free tool</a>
-    </button>
     </div>
 
-    <section id="segundaSeccion">
-    <img src="img/imagen.webp" alt="imagen" class="imagen">
-    <div class="columna">
-    <header><h3>About US</h3></header>
-    <p>We are dedicated to enhancing productivity and simplifying task
-    management for individuals and teams. Our free tool offers a user-friendly
-    platform to efficiently organize, prioritize, and optimize tasks, helping you achieve your goals with ease.
-    </p>
-</div>
-
-</section>
-
-
-<section id="terceraSeccion">
-    <img src="img/logo.png" alt=logo" class="companyimage">
-    <div class="columna">
-    <header><h3>Our Mission</h3></header>
-    <p>This To-Do List website allows you to efficiently manage your tasks by letting you create, view, and edit tasks as needed. You can easily mark tasks as complete when they're done or delete them if no longer needed, all within a simple and intuitive interface designed to help you stay organized.</p>
+    <!-- 1~SECCION -->
+    <div class="container">
+      <div class="first-section">
+        <header class="header">
+          <h1>To-do-list</h1>
+          <article>
+            <section>
+              <h6>
+                This is a to-do list app designed to help users to organize and
+                manage their daily activities.
+              </h6>
+            </section>
+          </article>
+        </header>
+      </div>
+      <button class="button">
+        <a href="routes/tasks.html">Use free tool</a>
+      </button>
     </div>
-</section>
+    <!-- 2~SECCION -->
+    <section class="second-section">
+      <img
+        src="assets/img/imagen.webp"
+        alt="Complete your task"
+        class="image"
+      />
+      <div class="column">
+        <header>
+          <h3>About US</h3>
+        </header>
+        <p>
+          We are dedicated to enhancing productivity and simplifying task
+          management for individuals and teams. Our free tool offers a
+          user-friendly platform to efficiently organize, prioritize, and
+          optimize tasks, helping you achieve your goals with ease.
+        </p>
+      </div>
+    </section>
 
+    <!-- 3~SECCION -->
+    <section class="third-section">
+      <img src="assets/img/logo.png" alt=logo" class="company-image">
+      <div class="column">
+        <header>
+          <h3>Our Mission</h3>
+        </header>
+        <p>
+          This To-Do List website allows you to efficiently manage your tasks by
+          letting you create, view, and edit tasks as needed. You can easily
+          mark tasks as complete when they're done or delete them if no longer
+          needed, all within a simple and intuitive interface designed to help
+          you stay organized.
+        </p>
+      </div>
+    </section>
 
-<div class="fondo">
-<div class="contact-container">
-    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
-        <div class="contact-left-title">
+    <!-- FORM -->
+    <div class="background">
+      <div class="contact-container">
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          class="contact-left"
+        >
+          <div class="contact-left-title">
             <h2>Leave us a comment</h2>
-            <hr>
+            <hr />
+          </div>
+          <input
+            type="hidden"
+            name="access_key"
+            value="de8d25f3-4fe3-40e0-8679-9b4837b0ab29"
+          />
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            class="contact-input"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            class="contact-input"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            class="contact-input"
+            required
+          ></textarea>
+          <button type="submit">
+            Submit <img src="assets/img/arrow_icon.png" />
+          </button>
+        </form>
+        <div class="contact-right">
+          <img src="assets/img/right_img.png" />
         </div>
-        <input type="hidden" name="access_key" value="de8d25f3-4fe3-40e0-8679-9b4837b0ab29">
-        <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
-        <input type="email" name="email" placeholder="Your Email" class="contact-input" required>
-        <textarea name="message" placeholder="Your Message" class="contact-input" required></textarea>
-        <button type="submit">Submit <img src="img/arrow_icon.png"></button>
-    </form>
-    <div class="contact-right">
-        <img src="img/right_img.png">
+      </div>
     </div>
-</div>
-</div>
 
-    <footer class="pie">
-        COPYRIGHT © 2023 OWNER'S SITE. ALL RIGHTS RESERVED.
+    <!-- FOOTER -->
+    <footer class="footer">
+      COPYRIGHT © 2023 OWNER'S SITE. ALL RIGHTS RESERVED.
     </footer>
-
-    
-
-
-</body>
+  </body>
 </html>
